@@ -46,12 +46,12 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
-     background-color: #f8f9f4;
+
+color: #000;
+font-size: 12px;
+line-height: 1.4;
+font-family: Helvetica, Arial, sans-serif;
+background-color: #f8f9f4;
     
 }
 
@@ -100,13 +100,11 @@ header h1 {
 
 
 .container {
-
      display: flex;
      flex-wrap: wrap;
      padding-top:10px;
      justify-content: space-around;
      height: 220px;
-     
      background-image: url("../images/mpls2.jpg");
      background-repeat: no-repeat;
 
@@ -171,11 +169,19 @@ h1 {
 }
 
 .main-content, .side-bar {
-    background-color: rgba(216,216,216,1);
+    
     border-radius: 5px;
-    box-shadow: 0 1.5px 0 0 rgba(255, 0, 0, 0.5);
+    box-shadow: 1.5px 1.5px 1.5px 0 rgba(255, 0, 0, 0.5);
     margin:5px;
     padding: 10px;
+    background-color:silver;
+    background-image: 
+    radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size:100px 50px;
 }
 .main-content {
     flex-grow: 4;
@@ -189,6 +195,38 @@ h1 {
    
 }
 
+.text-background {
+    background-color: #f8f9f4;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:1px 1px 1px 1px gray  inset;
+    font-size: 15px;
+    
+
+}
+.text-background img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.text-background p {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.text-background ul {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-right: 150px;
+    margin-left: 150px;
+
+}
+
+.text-background li {
+    color: white;
+}
 /*This is the slider pluging CSS ------------------------*/
 
 
@@ -199,7 +237,8 @@ h1 {
 
 
 
-
+/*colors for later use
+background-color: rgba(216,216,216,1);*/
 
 
 
