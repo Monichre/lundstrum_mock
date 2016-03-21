@@ -46,13 +46,160 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
+     
      color: #000;
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
-     margin:0px;
+     background-color: #f8f9f4;
+    
+}
+
+@font-face {
+    font-family: Jonah;
+    src: url(../fonts/Jonah-DEMO-Regular.ttf);
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis.ttf);
+}
+
+@font-face {
+    font-family: MovLette;
+    src: url(../fonts/MovLette.ttf);
+}
+
+@font-face {
+    font-family: ethon;
+    src: url(../fonts/ethon/ETH Serif/ETHSerifEthon.ttf);
 }
 
 /******************************************
 /* LAYOUT                   
 /*******************************************/
+
+
+.background {
+     
+    
+     border-radius: 5px;
+     margin: auto;
+     box-shadow: 0 1.5px 0 0 rgba(255, 0, 0, 0.5);
+     background-color: #f8f9f4;
+     height: 220px;
+}
+
+header h1 {
+     margin-top: 110px;
+     font-family: Metropolis;
+     font-size: 80px;
+     float: left;
+
+}
+
+
+.container {
+
+     display: flex;
+     flex-wrap: wrap;
+     padding-top:10px;
+     justify-content: space-around;
+     height: 220px;
+     
+     background-image: url("../images/mpls2.jpg");
+     background-repeat: no-repeat;
+
+
+}
+
+.item {
+     text-align: center;
+     font-family: Jonah;
+     text-decoration: none;
+     list-style-type: none;
+     width: 12%;
+     
+}
+
+/*This is the dropdown css*/
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content {
+     display: none;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 0 auto;
+    height: 175px;
+    border-radius: 50%;
+    padding-top: 10px;
+
+}
+
+.dropdown p {
+    padding-top: 8px;
+}
+.dropdown a {
+     text-decoration: none;
+     color: white;
+     font-family: ethon;
+     font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*this is the main content of the page*/
+
+h1 {
+    font-family: Metropolis;
+    font-size: 40px;
+    margin: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:15px;
+}
+
+.main-content, .side-bar {
+    background-color: rgba(216,216,216,1);
+    border-radius: 5px;
+    box-shadow: 0 1.5px 0 0 rgba(255, 0, 0, 0.5);
+    margin:5px;
+    padding: 10px;
+}
+.main-content {
+    flex-grow: 4;
+    
+    
+}
+
+.side-bar {
+    
+    flex-grow: 2;
+   
+}
+
+/*This is the slider pluging CSS ------------------------*/
+
+
+/* Prevents slides from flashing */
+#slides {     
+ display:none;
+    }
+
+
+
+
+
+
+
