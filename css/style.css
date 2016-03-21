@@ -227,15 +227,27 @@ h1 {
 .text-background li {
     color: white;
 }
-/*This is the slider pluging CSS ------------------------*/
 
 
-/* Prevents slides from flashing */
-#slides {     
- display:none;
-    }
+/*Row 2 CSS styles
+***********************************************/
 
 
+
+.row-2 {
+background: 
+linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+linear-gradient(45deg, #ECEDDC 25%, transparent 25%);   
+background-size: 100px 100px;
+background-color: rgba(255, 0, 0, 0.5);
+}
+
+.row-2 img {
+    float: right;
+    margin-left: 10px;
+}
 
 /*colors for later use
 background-color: rgba(216,216,216,1);*/
